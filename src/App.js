@@ -5,7 +5,7 @@ import './style.css';
 const url = 'https://course-api.com/react-tours-project';
 export default function App() {
   const [loading, setLoading] = useState(true);
-  const [tour, setTour] = useState([]);
+  const [tours, setTours] = useState([]);
   const fetchTours = async () => {
     setLoading(true);
 
@@ -32,7 +32,7 @@ export default function App() {
   }
   return (
     <main>
-      <Tours tours={tour} />
+      <Tours tours={tours} />
     </main>
   );
 }
