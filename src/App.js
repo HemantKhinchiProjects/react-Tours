@@ -6,12 +6,16 @@ const url = 'https://course-api.com/react-tours-project';
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [tour, setTour] = useState([]);
-  if (Loading) {
-    return <Loading />;
+  if (loading) {
+    return (
+      <main>
+        <Loading />
+      </main>
+    );
   }
   return (
-    <div>
-      <h2>Tours Project Setup</h2>
-    </div>
+    <main>
+      <Tours />
+    </main>
   );
 }
