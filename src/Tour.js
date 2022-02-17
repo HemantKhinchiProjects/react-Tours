@@ -9,7 +9,7 @@ const Tour = ({ id, name, image, info, price }) => {
           <h4 className="tour-price">${price}</h4>
         </div>
         <p>{info}</p>
-        <button classNam="delete-btn">not interested</button>
+        <button className="delete-btn">not interested</button>
       </footer>
     </article>
   );
